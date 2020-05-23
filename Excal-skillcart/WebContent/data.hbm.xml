@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="Data" table="data">
+      <id name="id" column="ID">
+         <generator class="increment"/>
+      </id>
+      <property name="name" column="Name"/>
+      <property name="price" column="Price"/>
+      <property name="desc" column="Description"/>
+      <property name="category" column="Category"/>
+     
+   </class>
+</hibernate-mapping>
